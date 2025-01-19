@@ -1,0 +1,692 @@
+/* -------------------------------------------------- Tổng quan ------------------------------------------------------ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", serif;
+
+    background-color: #182628;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* -----------------------Thanh menu ------------------------------- */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 7%;
+    /* background-color: #182628; */
+
+    z-index: 3;
+    position: fixed;
+    top: 10px;
+    left: auto;
+    right: auto;
+}
+
+/* ----------logo------------------- */
+
+.logo-school {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-school img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.logo-school span {
+    color: palevioletred;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* ---------Điều hướng --------------*/
+
+
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 10px 0;
+    border-radius: 10px;
+
+    transition: box-shadow 0.5s, text-shadow 0.5s;
+    text-wrap: nowrap;
+}
+
+.fa-solid,
+.nav-text a {
+    color: #fff;
+    font-size: 1.7rem;
+    transition: color 0.5s;
+}
+
+.nav-icon a {
+    padding-left: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.nav-text a {
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+
+
+.nav ul li:hover {
+    box-shadow: 0 0 5px 3px cyan;
+    text-shadow: 0px 38px 2px cyan;
+
+}
+
+.nav ul li:hover .nav-icon .fa-solid,
+.nav ul li:hover .nav-text a {
+    color: violet;
+}
+
+/* ----------------header-------------------- */
+header {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+    padding: 170px 10%;
+    background-image: url(../img/home-bg.jpg);
+    background-size: cover;
+
+}
+
+
+header section .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  ------------Khối bên trái ---------------- */
+
+.info-text .info-text-1 {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+
+}
+
+.info-text .info-text-2 {
+    color: palevioletred;
+    font-size: 6rem;
+    margin-top: 40px;
+    font-weight: 800;
+
+}
+
+.info-text .info-text-3 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 40px;
+}
+
+.info-text .info-text-4 {
+    color: cyan;
+    font-size: 4rem;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.club-text {
+    color: violet;
+}
+
+.info-text {
+    letter-spacing: 3px;
+}
+
+/* --------------------Khối bên phải ------------------- */
+
+.info .group-img .fa-users {
+    font-size: 300px;
+    color: peachpuff;
+
+}
+
+.info .group-img {
+
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 80px 20px cyan;
+}
+
+/* ---------------------Main 1 : câu lạc bộ tin học--------------------- */
+
+
+
+.fa-computer {
+    color: yellow;
+    font-size: 5rem;
+
+}
+
+.main-content-1 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 90px 10%;
+    background-image: url(../img/tinhoc-bg.jpg);
+    background-size: cover;
+}
+
+.main-content-1 h1 {
+
+    color: antiquewhite;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.tin-hoc-club {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*----------------- Khối bên trái -------------------*/
+.tin-hoc-img {
+    width: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 8px cyan;
+    border-radius: 30px;
+    border: 3px solid cyan;
+
+}
+
+.tin-hoc-img img {
+    display: block;
+    max-width: 100%;
+    height: 480px;
+    background-size: cover;
+    transition: transform 0.5s;
+
+
+}
+
+.tin-hoc-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* --------------------Khối bên phải--------------------- */
+.tin-hoc-content p {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: burlywood;
+    text-wrap: nowrap;
+    font-weight: 600;
+
+}
+
+.tin-hoc-text-2 {
+    margin-top: 40px;
+}
+
+.tin-hoc-text-3 {
+    margin-top: 20px;
+}
+
+.tin-hoc-content p span {
+    font-size: 6rem;
+    letter-spacing: 5px;
+    color: chartreuse;
+    font-weight: 800;
+}
+
+.fa-hand-holding-dollar,
+.fa-hand-holding-heart,
+.fa-chalkboard-user {
+    font-size: 2.5rem;
+    color: aqua;
+}
+
+.tin-hoc-content ul li p {
+    text-indent: 80px;
+    padding: 10px 15px;
+    letter-spacing: 5px;
+
+}
+
+.tin-hoc-content ul {
+    margin-top: 35px;
+}
+
+/* ---------------------------------------Main 2 - lien quan game --------------------------------------- */
+
+.main-content-2 {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 10%;
+    margin: 0 auto;
+    background-image: url(../img/clb-game.jpg);
+    background-size: cover;
+}
+
+.main-content-2 h1 {
+    color: antiquewhite;
+    text-align: right;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.fa-gamepad {
+    font-size: 4rem;
+    color: cornflowerblue;
+}
+
+.game-club {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.game-club-content h2 {
+    font-size: 6rem;
+    color: chartreuse;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.game-club-content ul {
+    margin-top: 20px;
+    padding-left: 70px;
+}
+
+.game-club-content ul li {
+    font-size: 2.5rem;
+    color: #fff;
+    text-indent: 30px;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    font-weight: 600;
+
+}
+
+.game-club-content ul li p {
+    max-width: 400px;
+    min-width: 320px;
+    line-height: 40px;
+}
+
+.fa-check {
+    font-size: 2.5rem;
+    color: greenyellow;
+    margin-right: 10px;
+}
+
+.game-contact {
+    margin-top: 30px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: cyan;
+    letter-spacing: 3px;
+    max-width: 450px;
+    text-align: center;
+}
+
+.game-contact a,
+.fa-crown {
+    color: yellow;
+    font-size: 3rem;
+    line-height: 60px;
+    font-weight: 700;
+
+}
+
+.game-contact a {
+    text-shadow: 4px 4px 8px #fff;
+    transition: text-shadow 0.5s;
+}
+
+.fa-crown {
+    color: gold;
+}
+
+.captain-lienquan {
+    color: #ccc;
+}
+
+.game-contact a:hover {
+    text-shadow: 3px 3px 8px black;
+
+}
+
+/* ---------------------Khối bên phải------------------------- */
+
+.game-club-img {
+    max-width: 650px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid;
+    box-shadow: 0 0 30px 20px black;
+}
+
+.game-club-img img {
+    width: 100%;
+    height: 420px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.game-club-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*----------------------------- Main 3 - bong da -------------------------*/
+
+
+.main-content-3 {
+    width: 100%;
+    height: 100vh;
+    padding: 100px 10%;
+    margin: 0 auto;
+    background-image: url(../img/football-bg.jpg);
+    background-size: cover;
+}
+
+.main-content-3 h1 {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px cyan;
+
+}
+
+
+
+@keyframes xoay {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.fa-futbol {
+    font-size: 50px;
+    color: brown;
+    animation: xoay 2s infinite linear;
+    text-shadow: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+.football-club {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 70px;
+}
+
+.football-box {
+    border: 10px solid rgba(0, 0, 0, 0.856);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.856);
+    transition: transform 0.5s, border 0.5s, box-shadow 0.5s;
+    box-shadow: 0 0 5px 5px cyan;
+}
+
+.football-box:hover {
+    transform: translateY(-20px);
+
+    box-shadow: 0 0 5px 5px #4158D0;
+}
+
+.football-box-img {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.football-box-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+    transition: transform 0.5s;
+}
+
+.football-box-img img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.football-box-content {
+    padding: 50px 40px 30px;
+    overflow: hidden;
+}
+
+.football-text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+    color: transparent;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    text-wrap: nowrap;
+
+}
+
+/*---------------------Team work-------------------------  */
+
+.team-work {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/teamwork-bg.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 100px 10%;
+}
+
+.team-work h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: #ffffffcb;
+    text-align: center;
+    /* background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background-clip: text; */
+    text-shadow: 6px 6px 2px black;
+}
+
+.team-work h1 .fa-people-group {
+    font-size: 4rem;
+    color: turquoise;
+}
+
+.team-work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.team-avt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+
+    box-shadow: 0 0 5px 5px cyan;
+}
+
+.team-avt img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s;
+
+}
+
+.team-avt img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.team-work-box {
+
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 30px;
+    box-shadow: 0 0 5px 5px #4158D0;
+    overflow: hidden;
+    transition: box-shadow 0.5s, background-color 0.5s;
+
+}
+
+.team-work-box:hover {
+    box-shadow: 0 0 10px 5px black;
+    background-color: rgb(109, 69, 18);
+
+}
+
+.team-work-content {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.team-text {
+    margin-left: 30px;
+    letter-spacing: 2px;
+    text-wrap: nowrap;
+
+
+}
+
+
+
+.team-text-big {
+    font-size: 2.5rem;
+    color: #C850C0;
+
+    line-height: 35px;
+}
+
+.team-text h3,
+.team-text p {
+    color: bisque;
+}
+
+.fa-facebook {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px blue;
+    border-radius: 50%;
+
+}
+
+.team-text a {
+    color: #fff;
+    text-shadow: 3px 3px 4px cyan;
+    transition: text-shadow 0.5s, color 0.5s;
+}
+
+.team-text a:hover {
+    text-shadow: 0px 70px 1px cyan;
+    color: yellow;
+}
+
+/*--------------- Copy right---------- */
+
+.copy-right {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+
+}
+
+.copy-right a {
+    display: block;
+    letter-spacing: 2px;
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    max-width: 700px;
+    border: 1px solid #fff;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    transition: box-shadow 0.5s;
+}
+
+.copy-right a:hover {
+    box-shadow: 0 0 5px 5px #fff;
+    cursor: pointer;
+}
